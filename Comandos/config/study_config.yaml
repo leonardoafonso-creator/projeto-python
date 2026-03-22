@@ -1,0 +1,58 @@
+study:
+  name: "estudo_exemplo"
+
+input:
+  file: "base_estudo.csv"
+  sep: ","
+  encoding: "utf-8"
+
+mapping:
+  file: "variables_map.csv"
+
+variables:
+  group: "grupo"
+  numeric:
+    - "idade"
+    - "phq9"
+    - "gad7"
+
+groups:
+  reference: "Controle"
+  comparison: "Intervenção"
+
+analysis:
+  descriptive_table: true
+  group_summary: true
+  ttest:
+    enabled: true
+    variable: "phq9"
+  correlation:
+    enabled: true
+    x: "phq9"
+    y: "gad7"
+
+figures:
+  barplot:
+    enabled: true
+    x: "grupo"
+    y: "phq9"
+    agg: "mean"
+    title: "PHQ-9 médio por grupo"
+    xlabel: "Grupo"
+    ylabel: "Média de PHQ-9"
+    filename: "figure_1_phq9_por_grupo.png"
+
+  scatter:
+    enabled: true
+    x: "phq9"
+    y: "gad7"
+    title: "Correlação entre PHQ-9 e GAD-7"
+    xlabel: "PHQ-9"
+    ylabel: "GAD-7"
+    filename: "figure_2_correlacao_phq9_gad7.png"
+
+outputs:
+  processed_data: "base_processada.csv"
+  descriptive_table: "table_1_descritiva.csv"
+  group_summary: "table_2_comparacao_grupos.csv"
+  statistical_results: "table_3_resultados_estatisticos.csv"

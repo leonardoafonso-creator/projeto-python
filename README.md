@@ -1,19 +1,16 @@
-# projeto_python
+# Template de estudo em Python
 
-Template para análise de dados, estatística e geração de outputs reprodutíveis.
+Projeto-base para análise de dados, estatística e geração de outputs reprodutíveis.
 
 ## Estrutura
+- data/raw/: dados brutos
+- data/processed/: dados processados
+- data/dictionaries/: codebooks
+- notebooks/: análises exploratórias
+- src/projeto_python/: código reutilizável
+- outputs/figures/: figuras
+- outputs/tables/: tabelas
 
-- `data/raw/`: dados brutos
-- `data/processed/`: dados processados
-- `data/dictionaries/`: dicionários e codebooks
-- `notebooks/`: exploração e análise
-- `src/projeto_python/`: código reutilizável
-- `outputs/figures/`: figuras
-- `outputs/tables/`: tabelas
-- `tests/`: testes
-
-## Como instalar
-
+## Instalação
 ```bash
 poetry install
