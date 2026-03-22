@@ -5,7 +5,6 @@
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
 
 # Jupyter
 .ipynb_checkpoints/
@@ -16,25 +15,20 @@ __pycache__/
 # Sistema
 .DS_Store
 Thumbs.db
-*.log
-*.tmp
 
-# Dados brutos: ignora tudo, mas mantém a pasta
+# Dados (ignorar conteúdo, manter estrutura)
 data/raw/*
 !data/raw/.gitkeep
 
-# Dados processados: ignora tudo, mas mantém a pasta
 data/processed/*
 !data/processed/.gitkeep
 
-# Dicionários: ignora tudo, mas mantém a pasta
 data/dictionaries/*
 !data/dictionaries/.gitkeep
 
-# Figuras geradas: ignora tudo, mas mantém a pasta
+# Outputs
 outputs/figures/*
 !outputs/figures/.gitkeep
 
-# Tabelas geradas: ignora tudo, mas mantém a pasta
 outputs/tables/*
 !outputs/tables/.gitkeep
