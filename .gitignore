@@ -4,6 +4,8 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # Jupyter
 .ipynb_checkpoints/
@@ -11,9 +13,28 @@ __pycache__/
 # VS Code
 .vscode/
 
-# Dados brutos
-data/raw/
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
 
-# Outputs gerados
-outputs/figures/
-outputs/tables/
+# Dados brutos: ignora tudo, mas mantém a pasta
+data/raw/*
+!data/raw/.gitkeep
+
+# Dados processados: ignora tudo, mas mantém a pasta
+data/processed/*
+!data/processed/.gitkeep
+
+# Dicionários: ignora tudo, mas mantém a pasta
+data/dictionaries/*
+!data/dictionaries/.gitkeep
+
+# Figuras geradas: ignora tudo, mas mantém a pasta
+outputs/figures/*
+!outputs/figures/.gitkeep
+
+# Tabelas geradas: ignora tudo, mas mantém a pasta
+outputs/tables/*
+!outputs/tables/.gitkeep
