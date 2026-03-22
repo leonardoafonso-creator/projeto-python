@@ -3,6 +3,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 def plot_bar(
     df: pd.DataFrame,
     x: str,
@@ -23,3 +24,4 @@ def plot_bar(
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
 
     plt.show()
+    plt.close()
